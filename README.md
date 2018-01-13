@@ -1,5 +1,5 @@
 # single-docker-nginx-uwsgi-django
-Configuration of docker, nginx, uWSGI to serve django application.
+Configuration of docker, nginx, uWSGI to serve Django application.
 ## Starting the application ##
 - Application alone can be found in /app subdirectory and run with django developer server: **./manage.py runserver**. In that case
 application can be accessed by typing: **localhost:8000** in the browser
@@ -16,10 +16,13 @@ follow these steps:
 - after getting into the container, make sure you are in the same directory as *uwsgi_reload* file, 
 then type: *$ touch uwsgi_reload* in the console. uWsgi will start chain_reload procedure.
 
-uWSGI: http://uwsgi-docs.readthedocs.io/en/latest/index.html
+## Configuration files ##
+- Docker: /build_folder/Dockerfile
+- uWSGI: /build_folder/app/uwsgi.ini
+- nginx: /build_folder/nginx-app.conf
 
-More about uWSGI chain_reload: http://uwsgi-docs.readthedocs.io/en/latest/articles/TheArtOfGracefulReloading.html#chain-reloading-lazy-apps
-
-Installation of docker: https://docs.docker.com/engine/installation/
-
-nginx: http://nginx.org/en/docs/beginners_guide.html
+## Links ##
+- uWSGI: http://uwsgi-docs.readthedocs.io/en/latest/index.html
+- More about uWSGI chain_reload: http://uwsgi-docs.readthedocs.io/en/latest/articles/TheArtOfGracefulReloading.html#chain-reloading-lazy-apps
+- Installation of docker: https://docs.docker.com/engine/installation/
+- nginx: http://nginx.org/en/docs/beginners_guide.html
