@@ -20,6 +20,7 @@ then type: *$ touch uwsgi_reload* in the console. uWsgi will start chain_reload 
 - Docker: /build_folder/Dockerfile
 - uWSGI: /build_folder/app/uwsgi.ini
 - nginx: /build_folder/nginx-app.conf
+- Django: /build_folder/app/Satelite_Tracking/settings.py
 
 ## Links ##
 - uWSGI: http://uwsgi-docs.readthedocs.io/en/latest/index.html
